@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dbproject:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dbproject="http://datical.com/db/project/1.0" name="Sample" storedLogicExternal="true" deployThreshold="stopOnError" runtimeCredentials="false" multiSchema="false" dbSchemaDefinition="dbDef" enableRowCount="true">
+  <dbDefs xsi:type="dbproject:OracleDbDef" name="REF" driver="oracle.jdbc.OracleDriver" hostname="localhost" port="1521" username="hr" password="aHI=" contexts="REF" storageOptionCollectedAtSnapshot="true" labels="current" environment="DEV" serviceName="REF" enableCompression="false" rowsPerBatch="10000"/>
+  <plans name="Sample" databaseDefs="//@dbDefs[name='REF']"/>
+  <changelog href="platform:/resource/Sample/Changelog/changelog.xml#//@databaseChangeLog"/>
+</dbproject:Project>
